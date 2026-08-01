@@ -13,11 +13,9 @@ Il sert de référence principale pour :
 - la création des applications, sites web, API et services ;
 - la vérification qu’aucune partie du projet n’a été oubliée.
 
-En cas de contradiction entre un ancien prompt, une ancienne réponse d’IA et la documentation actuelle, la version validée dans `mansa-docs` devient la référence.
+En cas de contradiction entre un ancien prompt, une ancienne réponse d’IA et la documentation actuelle, la version validée dans ce dépôt devient la référence officielle du projet.
 
-Le dépôt `mansa-docs` contient les spécifications.
-
-Le dépôt `mansa-platform` contient le code source réel.
+Le dépôt `mansa-fin` constitue la source de vérité unique de Mansa. Il accueillera progressivement la documentation validée, puis les éléments techniques et le code nécessaires au développement du projet, selon l’organisation définie dans les documents d’architecture.
 
 ## 2. Vision de Mansa
 
@@ -587,38 +585,34 @@ Exigences :
 
 Les performances et l’accessibilité restent prioritaires sur les effets visuels.
 
-## 8. Répartition entre les dépôts
+## 8. Organisation du dépôt unique `mansa-fin`
 
-### `mansa-docs`
+Le projet repart dans un dépôt unique et propre nommé `mansa-fin`.
 
-Contient :
+Ce dépôt devient la source de vérité officielle de Mansa. Il doit accueillir, dans une structure claire et séparée :
 
-- vision ;
-- spécifications ;
-- prompts ;
-- règles métier ;
-- contrats API ;
-- schémas ;
-- critères d’acceptation ;
-- parcours ;
-- décisions d’architecture ;
-- exigences de tests ;
-- documentation de déploiement.
+- la vision ;
+- les spécifications fonctionnelles ;
+- les règles métier ;
+- les contrats API ;
+- les schémas et modèles de données ;
+- les critères d’acceptation ;
+- les parcours utilisateurs ;
+- les décisions d’architecture ;
+- les exigences de tests ;
+- la documentation de déploiement ;
+- le code source lorsqu’il sera développé ;
+- les tests ;
+- les configurations ;
+- les migrations ;
+- les scripts ;
+- la CI/CD ;
+- les exemples d’environnement ;
+- la documentation technique nécessaire à l’exécution.
 
-### `mansa-platform`
+La documentation et le code devront rester séparés par des dossiers explicites afin d’éviter les doublons, les contradictions et les versions concurrentes.
 
-Contient principalement :
-
-- code source ;
-- tests ;
-- configurations ;
-- migrations ;
-- scripts ;
-- CI ;
-- exemples d’environnement ;
-- documentation technique minimale nécessaire à l’exécution.
-
-Le dépôt plateforme ne doit pas être rempli de longs textes fonctionnels déjà présents dans `mansa-docs`.
+Aucune référence aux anciens dépôts `mansa-docs` ou `mansa-platform` ne doit être utilisée comme organisation actuelle du projet.
 
 ## 9. Statuts des fonctionnalités
 
@@ -643,10 +637,8 @@ Aucun fichier n’est considéré comme définitif tant qu’il n’a pas été 
 
 Avant chaque ajout important dans GitHub :
 
-1. le contenu est présenté ;
-2. les corrections sont demandées ;
-3. le propriétaire valide ;
-4. le fichier est poussé ;
-5. le commit est communiqué.
-
-Le fichier est assez complet pour servir de carte officielle de tout l’écosystème, sans entrer encore dans les détails de chaque fonctionnalité.
+- le contenu est présenté ;
+- les corrections sont demandées ;
+- le propriétaire valide ;
+- le fichier est poussé ;
+- le commit est communiqué.
