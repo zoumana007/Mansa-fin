@@ -1,0 +1,3 @@
+# 06 — Sécurité globale de Mansa
+
+Ce document contient la spécification validée de la sécurité globale de Mansa telle que définie dans cette conversation, couvrant les principes de sécurité, l'authentification, les sessions, les appareils, les contrôles d'accès, le chiffrement, la protection des API, la fraude, l'audit, la sécurité mobile, web, TPE, la gestion des incidents et les critères d'acceptation.
