@@ -1,0 +1,3 @@
+# 45 — Application TPE Mansa (SoftPOS & Terminaux Android)
+
+Spécification complète validée telle que fournie dans la conversation, couvrant l'activation des terminaux, les paiements (cartes, Wallet Mansa, QR, NFC, Mobile Money), paiements mixtes, remboursements, préautorisations, reçus, sécurité, administration, diagnostics, mises à jour, API, modèles, tests, règles métier et critères d'acceptation.
